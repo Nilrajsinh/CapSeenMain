@@ -16,6 +16,16 @@
 		F013800623A9F29200CA5301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F013800423A9F29200CA5301 /* LaunchScreen.storyboard */; };
 		F013801123A9F29200CA5301 /* Cap_TapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013801023A9F29200CA5301 /* Cap_TapTests.swift */; };
 		F013801C23A9F29200CA5301 /* Cap_TapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013801B23A9F29200CA5301 /* Cap_TapUITests.swift */; };
+		F013802D23AA069E00CA5301 /* LitCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013802C23AA069E00CA5301 /* LitCap.swift */; };
+		F071EA1623ACA8BB009E4279 /* Short.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1523ACA8BB009E4279 /* Short.swift */; };
+		F071EA1823AD4DA6009E4279 /* attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1723AD4DA6009E4279 /* attitude.swift */; };
+		F071EA1A23AD4DEE009E4279 /* Sassy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1923AD4DEE009E4279 /* Sassy.swift */; };
+		F071EA1C23AD4E08009E4279 /* Girl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1B23AD4E08009E4279 /* Girl.swift */; };
+		F071EA1E23AD4E1E009E4279 /* Savage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1D23AD4E1E009E4279 /* Savage.swift */; };
+		F071EA2023AD4E27009E4279 /* Boy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1F23AD4E27009E4279 /* Boy.swift */; };
+		F071EA2223AD4E37009E4279 /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA2123AD4E37009E4279 /* Lyrics.swift */; };
+		F071EA2423AD4E45009E4279 /* Romanctic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA2323AD4E45009E4279 /* Romanctic.swift */; };
+		F071EA2623AD4E54009E4279 /* BIo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA2523AD4E54009E4279 /* BIo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F0137FF323A9F28F00CA5301 /* Cap-Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cap-Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0137FF323A9F28F00CA5301 /* CapSeen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapSeen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0137FF623A9F28F00CA5301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0137FF823A9F28F00CA5301 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F0137FFA23A9F28F00CA5301 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,12 +55,22 @@
 		F013800223A9F29200CA5301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F013800523A9F29200CA5301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F013800723A9F29200CA5301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F013800C23A9F29200CA5301 /* Cap-TapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cap-TapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F013800C23A9F29200CA5301 /* CapSeenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapSeenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F013801023A9F29200CA5301 /* Cap_TapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cap_TapTests.swift; sourceTree = "<group>"; };
 		F013801223A9F29200CA5301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F013801723A9F29200CA5301 /* Cap-TapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cap-TapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F013801723A9F29200CA5301 /* CapSeenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapSeenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F013801B23A9F29200CA5301 /* Cap_TapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cap_TapUITests.swift; sourceTree = "<group>"; };
 		F013801D23A9F29200CA5301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F013802C23AA069E00CA5301 /* LitCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitCap.swift; sourceTree = "<group>"; };
+		F071EA1523ACA8BB009E4279 /* Short.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Short.swift; sourceTree = "<group>"; };
+		F071EA1723AD4DA6009E4279 /* attitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attitude.swift; sourceTree = "<group>"; };
+		F071EA1923AD4DEE009E4279 /* Sassy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sassy.swift; sourceTree = "<group>"; };
+		F071EA1B23AD4E08009E4279 /* Girl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Girl.swift; sourceTree = "<group>"; };
+		F071EA1D23AD4E1E009E4279 /* Savage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Savage.swift; sourceTree = "<group>"; };
+		F071EA1F23AD4E27009E4279 /* Boy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boy.swift; sourceTree = "<group>"; };
+		F071EA2123AD4E37009E4279 /* Lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
+		F071EA2323AD4E45009E4279 /* Romanctic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Romanctic.swift; sourceTree = "<group>"; };
+		F071EA2523AD4E54009E4279 /* BIo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +111,9 @@
 		F0137FF423A9F28F00CA5301 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0137FF323A9F28F00CA5301 /* Cap-Tap.app */,
-				F013800C23A9F29200CA5301 /* Cap-TapTests.xctest */,
-				F013801723A9F29200CA5301 /* Cap-TapUITests.xctest */,
+				F0137FF323A9F28F00CA5301 /* CapSeen.app */,
+				F013800C23A9F29200CA5301 /* CapSeenTests.xctest */,
+				F013801723A9F29200CA5301 /* CapSeenUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +121,7 @@
 		F0137FF523A9F28F00CA5301 /* Cap-Tap */ = {
 			isa = PBXGroup;
 			children = (
+				F013802923AA051900CA5301 /* New Group */,
 				F0137FF623A9F28F00CA5301 /* AppDelegate.swift */,
 				F0137FF823A9F28F00CA5301 /* SceneDelegate.swift */,
 				F0137FFA23A9F28F00CA5301 /* ViewController.swift */,
@@ -131,12 +152,29 @@
 			path = "Cap-TapUITests";
 			sourceTree = "<group>";
 		};
+		F013802923AA051900CA5301 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F013802C23AA069E00CA5301 /* LitCap.swift */,
+				F071EA1523ACA8BB009E4279 /* Short.swift */,
+				F071EA1723AD4DA6009E4279 /* attitude.swift */,
+				F071EA1923AD4DEE009E4279 /* Sassy.swift */,
+				F071EA1B23AD4E08009E4279 /* Girl.swift */,
+				F071EA1D23AD4E1E009E4279 /* Savage.swift */,
+				F071EA1F23AD4E27009E4279 /* Boy.swift */,
+				F071EA2123AD4E37009E4279 /* Lyrics.swift */,
+				F071EA2323AD4E45009E4279 /* Romanctic.swift */,
+				F071EA2523AD4E54009E4279 /* BIo.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F0137FF223A9F28F00CA5301 /* Cap-Tap */ = {
+		F0137FF223A9F28F00CA5301 /* CapSeen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F013802023A9F29200CA5301 /* Build configuration list for PBXNativeTarget "Cap-Tap" */;
+			buildConfigurationList = F013802023A9F29200CA5301 /* Build configuration list for PBXNativeTarget "CapSeen" */;
 			buildPhases = (
 				F0137FEF23A9F28F00CA5301 /* Sources */,
 				F0137FF023A9F28F00CA5301 /* Frameworks */,
@@ -146,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = "Cap-Tap";
+			name = CapSeen;
 			productName = "Cap-Tap";
-			productReference = F0137FF323A9F28F00CA5301 /* Cap-Tap.app */;
+			productReference = F0137FF323A9F28F00CA5301 /* CapSeen.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F013800B23A9F29200CA5301 /* Cap-TapTests */ = {
+		F013800B23A9F29200CA5301 /* CapSeenTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F013802323A9F29200CA5301 /* Build configuration list for PBXNativeTarget "Cap-TapTests" */;
+			buildConfigurationList = F013802323A9F29200CA5301 /* Build configuration list for PBXNativeTarget "CapSeenTests" */;
 			buildPhases = (
 				F013800823A9F29200CA5301 /* Sources */,
 				F013800923A9F29200CA5301 /* Frameworks */,
@@ -164,14 +202,14 @@
 			dependencies = (
 				F013800E23A9F29200CA5301 /* PBXTargetDependency */,
 			);
-			name = "Cap-TapTests";
+			name = CapSeenTests;
 			productName = "Cap-TapTests";
-			productReference = F013800C23A9F29200CA5301 /* Cap-TapTests.xctest */;
+			productReference = F013800C23A9F29200CA5301 /* CapSeenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F013801623A9F29200CA5301 /* Cap-TapUITests */ = {
+		F013801623A9F29200CA5301 /* CapSeenUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F013802623A9F29200CA5301 /* Build configuration list for PBXNativeTarget "Cap-TapUITests" */;
+			buildConfigurationList = F013802623A9F29200CA5301 /* Build configuration list for PBXNativeTarget "CapSeenUITests" */;
 			buildPhases = (
 				F013801323A9F29200CA5301 /* Sources */,
 				F013801423A9F29200CA5301 /* Frameworks */,
@@ -182,9 +220,9 @@
 			dependencies = (
 				F013801923A9F29200CA5301 /* PBXTargetDependency */,
 			);
-			name = "Cap-TapUITests";
+			name = CapSeenUITests;
 			productName = "Cap-TapUITests";
-			productReference = F013801723A9F29200CA5301 /* Cap-TapUITests.xctest */;
+			productReference = F013801723A9F29200CA5301 /* CapSeenUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F0137FEE23A9F28F00CA5301 /* Build configuration list for PBXProject "Cap-Tap" */;
+			buildConfigurationList = F0137FEE23A9F28F00CA5301 /* Build configuration list for PBXProject "CapSeen" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,9 +261,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F0137FF223A9F28F00CA5301 /* Cap-Tap */,
-				F013800B23A9F29200CA5301 /* Cap-TapTests */,
-				F013801623A9F29200CA5301 /* Cap-TapUITests */,
+				F0137FF223A9F28F00CA5301 /* CapSeen */,
+				F013800B23A9F29200CA5301 /* CapSeenTests */,
+				F013801623A9F29200CA5301 /* CapSeenUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,10 +300,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F071EA1E23AD4E1E009E4279 /* Savage.swift in Sources */,
+				F013802D23AA069E00CA5301 /* LitCap.swift in Sources */,
+				F071EA1A23AD4DEE009E4279 /* Sassy.swift in Sources */,
+				F071EA2023AD4E27009E4279 /* Boy.swift in Sources */,
+				F071EA2623AD4E54009E4279 /* BIo.swift in Sources */,
+				F071EA1C23AD4E08009E4279 /* Girl.swift in Sources */,
 				F013800123A9F28F00CA5301 /* Cap_Tap.xcdatamodeld in Sources */,
+				F071EA1623ACA8BB009E4279 /* Short.swift in Sources */,
 				F0137FFB23A9F28F00CA5301 /* ViewController.swift in Sources */,
 				F0137FF723A9F28F00CA5301 /* AppDelegate.swift in Sources */,
+				F071EA2223AD4E37009E4279 /* Lyrics.swift in Sources */,
 				F0137FF923A9F28F00CA5301 /* SceneDelegate.swift in Sources */,
+				F071EA1823AD4DA6009E4279 /* attitude.swift in Sources */,
+				F071EA2423AD4E45009E4279 /* Romanctic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,12 +338,12 @@
 /* Begin PBXTargetDependency section */
 		F013800E23A9F29200CA5301 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F0137FF223A9F28F00CA5301 /* Cap-Tap */;
+			target = F0137FF223A9F28F00CA5301 /* CapSeen */;
 			targetProxy = F013800D23A9F29200CA5301 /* PBXContainerItemProxy */;
 		};
 		F013801923A9F29200CA5301 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F0137FF223A9F28F00CA5301 /* Cap-Tap */;
+			target = F0137FF223A9F28F00CA5301 /* CapSeen */;
 			targetProxy = F013801823A9F29200CA5301 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -446,7 +494,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tipsy.com.Cap-Tap";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CapSeen;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +512,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tipsy.com.Cap-Tap";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CapSeen;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,7 +536,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cap-Tap.app/Cap-Tap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapSeen.app/CapSeen";
 			};
 			name = Debug;
 		};
@@ -510,7 +558,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cap-Tap.app/Cap-Tap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapSeen.app/CapSeen";
 			};
 			name = Release;
 		};
@@ -557,7 +605,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F0137FEE23A9F28F00CA5301 /* Build configuration list for PBXProject "Cap-Tap" */ = {
+		F0137FEE23A9F28F00CA5301 /* Build configuration list for PBXProject "CapSeen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F013801E23A9F29200CA5301 /* Debug */,
@@ -566,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F013802023A9F29200CA5301 /* Build configuration list for PBXNativeTarget "Cap-Tap" */ = {
+		F013802023A9F29200CA5301 /* Build configuration list for PBXNativeTarget "CapSeen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F013802123A9F29200CA5301 /* Debug */,
@@ -575,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F013802323A9F29200CA5301 /* Build configuration list for PBXNativeTarget "Cap-TapTests" */ = {
+		F013802323A9F29200CA5301 /* Build configuration list for PBXNativeTarget "CapSeenTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F013802423A9F29200CA5301 /* Debug */,
@@ -584,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F013802623A9F29200CA5301 /* Build configuration list for PBXNativeTarget "Cap-TapUITests" */ = {
+		F013802623A9F29200CA5301 /* Build configuration list for PBXNativeTarget "CapSeenUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F013802723A9F29200CA5301 /* Debug */,
