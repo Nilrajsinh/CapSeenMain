@@ -15,50 +15,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="final logo tipsy png" translatesAutoresizingMaskIntoConstraints="NO" id="0QP-28-4Rq">
-                                <rect key="frame" x="0.0" y="231" width="375" height="350"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tipsy" translatesAutoresizingMaskIntoConstraints="NO" id="0QP-28-4Rq">
+                                <rect key="frame" x="0.0" y="613" width="375" height="199"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp Image 2019-12-23 at 7.37.54 PM" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-ex-ngm">
+                                <rect key="frame" x="0.0" y="191" width="375" height="430"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="434" id="7jr-2E-jFA"/>
-                                    <constraint firstAttribute="width" constant="414" id="nYG-Z9-qeY"/>
+                                    <constraint firstAttribute="width" constant="375" id="1kR-eT-fFA"/>
+                                    <constraint firstAttribute="height" constant="430" id="FHV-5a-Z1P"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1kR-eT-fFA"/>
+                                        <exclude reference="FHV-5a-Z1P"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1kR-eT-fFA"/>
+                                        <include reference="FHV-5a-Z1P"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0QP-28-4Rq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="187" id="0dT-O2-W3Q"/>
-                            <constraint firstItem="0QP-28-4Rq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="187" id="2Ao-km-aWQ"/>
-                            <constraint firstItem="0QP-28-4Rq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Ig-Oq-W2W"/>
-                            <constraint firstItem="0QP-28-4Rq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gLh-yS-ySl"/>
-                            <constraint firstItem="0QP-28-4Rq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="m3M-jF-v6w"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0QP-28-4Rq" secondAttribute="bottom" constant="197" id="mrf-Zv-cVS"/>
-                            <constraint firstItem="0QP-28-4Rq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sqx-8J-SnU"/>
-                            <constraint firstItem="0QP-28-4Rq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zmj-JY-Gcv"/>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="trailing" secondItem="0QP-28-4Rq" secondAttribute="trailing" id="36q-aW-dml"/>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="F8Z-4d-anj"/>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JOn-xV-sdJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0QP-28-4Rq" secondAttribute="bottom" constant="-34" id="VT9-So-Cq6"/>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZF4-cJ-8vq"/>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="leading" secondItem="0QP-28-4Rq" secondAttribute="leading" id="czh-FO-FJm"/>
+                            <constraint firstItem="0QP-28-4Rq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="569" id="xSi-q3-lwZ"/>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xlc-MJ-usb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="0dT-O2-W3Q"/>
-                                <exclude reference="4Ig-Oq-W2W"/>
-                                <exclude reference="gLh-yS-ySl"/>
-                                <exclude reference="zmj-JY-Gcv"/>
+                                <exclude reference="36q-aW-dml"/>
+                                <exclude reference="F8Z-4d-anj"/>
+                                <exclude reference="JOn-xV-sdJ"/>
+                                <exclude reference="ZF4-cJ-8vq"/>
+                                <exclude reference="czh-FO-FJm"/>
+                                <exclude reference="xlc-MJ-usb"/>
+                                <exclude reference="VT9-So-Cq6"/>
+                                <exclude reference="xSi-q3-lwZ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="0dT-O2-W3Q"/>
-                                <include reference="4Ig-Oq-W2W"/>
-                                <include reference="gLh-yS-ySl"/>
-                                <include reference="zmj-JY-Gcv"/>
+                                <include reference="36q-aW-dml"/>
+                                <include reference="F8Z-4d-anj"/>
+                                <include reference="JOn-xV-sdJ"/>
+                                <include reference="ZF4-cJ-8vq"/>
+                                <include reference="czh-FO-FJm"/>
+                                <include reference="xlc-MJ-usb"/>
+                                <include reference="VT9-So-Cq6"/>
+                                <include reference="xSi-q3-lwZ"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
     <resources>
-        <image name="final logo tipsy png" width="1500" height="1500"/>
+        <image name="Tipsy" width="1500" height="1500"/>
+        <image name="WhatsApp Image 2019-12-23 at 7.37.54 PM" width="1280" height="1280"/>
     </resources>
 </document>
