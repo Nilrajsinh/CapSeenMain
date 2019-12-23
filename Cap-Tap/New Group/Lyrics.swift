@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class Lyrics: UITableViewController {
+
+class Lyrics: UITableViewController, GADInterstitialDelegate {
+    
+      var interstitial: GADInterstitial!
     
     var Lyrics = [
        
@@ -110,13 +114,30 @@ class Lyrics: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
+
+        let request = GADRequest()
+        interstitial.load(request)
+        interstitial = createAndLoadInterstitial()
+           interstitial.delegate = self
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    func createAndLoadInterstitial() -> GADInterstitial {
+      var interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
+      interstitial.delegate = self
+      interstitial.load(GADRequest())
+      return interstitial
+    }
 
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+      interstitial = createAndLoadInterstitial()
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -168,6 +189,9 @@ class Lyrics: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
+        if interstitial.isReady {
+           interstitial.present(fromRootViewController: self)
+         }
         
         let cell = tableView.cellForRow(at: indexPath)
         UIPasteboard.general.string = cell?.textLabel?.text

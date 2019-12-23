@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class LitCap: UIViewController, UITableViewDelegate, UITableViewDataSource {
+      var interstitial: GADInterstitial!
     
     
     @IBOutlet weak var tblview: UITableView!
@@ -132,6 +134,9 @@ class LitCap: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
+        if interstitial.isReady {
+          interstitial.present(fromRootViewController: self)
+        }
         
         let cell = tableView.cellForRow(at: indexPath)
         UIPasteboard.general.string = cell?.textLabel?.text
@@ -141,10 +146,24 @@ class LitCap: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-  
-        
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        let request = GADRequest()
+           interstitial.load(request)
+        interstitial = createAndLoadInterstitial()
+         interstitial.delegate = self
+      
         // Do any additional setup after loading the view.
+    }
+
+    func createAndLoadInterstitial() -> GADInterstitial {
+      var interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+      interstitial.delegate = self
+      interstitial.load(GADRequest())
+      return interstitial
+    }
+
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+      interstitial = createAndLoadInterstitial()
     }
     
     override func viewWillAppear(_ animated: Bool) {

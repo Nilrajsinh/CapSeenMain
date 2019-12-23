@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class Short: UITableViewController {
+class Short: UITableViewController, GADInterstitialDelegate {
+    
+      var interstitial: GADInterstitial!
     
     
     var short = [
@@ -402,7 +405,11 @@ class Short: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
+        let request = GADRequest()
+           interstitial.load(request)
+        interstitial = createAndLoadInterstitial()
+        interstitial.delegate = self
         
         
 
@@ -416,6 +423,16 @@ class Short: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         animateTable()
+    }
+    func createAndLoadInterstitial() -> GADInterstitial {
+      var interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
+      interstitial.delegate = self
+      interstitial.load(GADRequest())
+      return interstitial
+    }
+
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+      interstitial = createAndLoadInterstitial()
     }
     
     
@@ -462,6 +479,10 @@ class Short: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if interstitial.isReady {
+          interstitial.present(fromRootViewController: self)
+        }
         
          tableView.deselectRow(at: indexPath, animated: true)
                
