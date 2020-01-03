@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController,GADInterstitialDelegate {
     
     let cellSpacingHeight: CGFloat = 5
+    
+        var interstitial: GADInterstitial!
+    
     
     
     var MainData = [
@@ -53,6 +57,14 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
    
         
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
+               let request = GADRequest()
+               interstitial.load(request)
+               interstitial = createAndLoadInterstitial()
+                interstitial.delegate = self
+        
+        
+        
         let imageView = UIImageView(image: backgroundImage)
         self.tableView.backgroundView = imageView
         // Uncomment the following line to preserve selection between presentations
@@ -61,6 +73,19 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+           interstitial = createAndLoadInterstitial()
+         }
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+         var interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
+         interstitial.delegate = self
+         interstitial.load(GADRequest())
+         return interstitial
+       }
+    
+      
+    
 
     // MARK: - Table view data source
 
@@ -82,7 +107,7 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.backgroundColor = UIColor(white: 1, alpha: 0.2)
         cell.layer.cornerRadius = 32
-        cell.layer.borderWidth = 5
+        cell.layer.borderWidth = 3
         
         
         cell.textLabel?.text = MainData[indexPath.row]["Title"]
@@ -96,6 +121,11 @@ class TableViewController: UITableViewController {
    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        if interstitial.isReady {
+                        interstitial.present(fromRootViewController: self)
+                      }
+        
         
         let controller = self.storyboard?.instantiateViewController(withIdentifier: MainData[indexPath.row]["Controller"]!)
         self.navigationController?.pushViewController(controller!, animated: true)
@@ -146,5 +176,24 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    @IBAction func Info(_ sender: Any) {
+        
+         let alertView = UIAlertController(title: "Touch on any caption to copy", message: nil, preferredStyle: .alert)
+         
+         let okaction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        
+         
+         alertView.addAction(okaction)
+        
+         
+         self.present(alertView, animated: true)
+        
+    }
+    
+    
+    
 
 }

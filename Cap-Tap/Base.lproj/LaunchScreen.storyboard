@@ -18,7 +18,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tipsy" translatesAutoresizingMaskIntoConstraints="NO" id="0QP-28-4Rq">
                                 <rect key="frame" x="0.0" y="663" width="375" height="149"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon 2" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-ex-ngm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp Image 2019-12-23 at 7.37.54 PM" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-ex-ngm">
                                 <rect key="frame" x="16" y="191" width="375" height="430"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="1kR-eT-fFA"/>
@@ -93,6 +93,6 @@
     </scenes>
     <resources>
         <image name="Tipsy" width="1500" height="1500"/>
-        <image name="icon 2" width="1280" height="1280"/>
+        <image name="WhatsApp Image 2019-12-23 at 7.37.54 PM" width="1280" height="1280"/>
     </resources>
 </document>
