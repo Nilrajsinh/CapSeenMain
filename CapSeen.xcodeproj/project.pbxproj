@@ -11,6 +11,9 @@
 		3DDAD6D85523BD95CF49F211 /* Pods_CapSeen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA0633753A61C666B509B16 /* Pods_CapSeen.framework */; };
 		CA896FEB60223F9485F2EF19 /* Pods_CapSeenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BC5169C990955216A1EB56 /* Pods_CapSeenTests.framework */; };
 		F006BFD523B0792C00BA5ECB /* Lit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F006BFD423B0792C00BA5ECB /* Lit.swift */; };
+		F007ABB223BA6652002097E4 /* Selfie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007ABB123BA6652002097E4 /* Selfie.swift */; };
+		F007ABB423BA72BC002097E4 /* dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007ABB323BA72BC002097E4 /* dog.swift */; };
+		F011378E23BF142300C6ABFF /* LitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011378D23BF142300C6ABFF /* LitCell.swift */; };
 		F0137FF723A9F28F00CA5301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0137FF623A9F28F00CA5301 /* AppDelegate.swift */; };
 		F0137FF923A9F28F00CA5301 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0137FF823A9F28F00CA5301 /* SceneDelegate.swift */; };
 		F0137FFB23A9F28F00CA5301 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0137FFA23A9F28F00CA5301 /* ViewController.swift */; };
@@ -20,6 +23,7 @@
 		F013800623A9F29200CA5301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F013800423A9F29200CA5301 /* LaunchScreen.storyboard */; };
 		F013801123A9F29200CA5301 /* Cap_TapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013801023A9F29200CA5301 /* Cap_TapTests.swift */; };
 		F013801C23A9F29200CA5301 /* Cap_TapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013801B23A9F29200CA5301 /* Cap_TapUITests.swift */; };
+		F02D0A2A23B760A0005601FF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D0A2923B760A0005601FF /* TableViewController.swift */; };
 		F071EA1623ACA8BB009E4279 /* Short.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1523ACA8BB009E4279 /* Short.swift */; };
 		F071EA1823AD4DA6009E4279 /* attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1723AD4DA6009E4279 /* attitude.swift */; };
 		F071EA1A23AD4DEE009E4279 /* Sassy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1923AD4DEE009E4279 /* Sassy.swift */; };
@@ -29,6 +33,22 @@
 		F071EA2223AD4E37009E4279 /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA2123AD4E37009E4279 /* Lyrics.swift */; };
 		F071EA2423AD4E45009E4279 /* Romanctic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA2323AD4E45009E4279 /* Romanctic.swift */; };
 		F071EA2623AD4E54009E4279 /* BIo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA2523AD4E54009E4279 /* BIo.swift */; };
+		F0DE37EC23B908E300E65753 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37EB23B908E300E65753 /* Food.swift */; };
+		F0DE37EE23B9095900E65753 /* Fitness.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37ED23B9095900E65753 /* Fitness.swift */; };
+		F0DE37F023B9096700E65753 /* Funny.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37EF23B9096700E65753 /* Funny.swift */; };
+		F0DE37F223B9097600E65753 /* Inspirational.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37F123B9097600E65753 /* Inspirational.swift */; };
+		F0DE37F423B9098000E65753 /* Life.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37F323B9098000E65753 /* Life.swift */; };
+		F0DE37F623B9098E00E65753 /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37F523B9098E00E65753 /* Success.swift */; };
+		F0DE37F823B9099900E65753 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37F723B9099900E65753 /* Birthday.swift */; };
+		F0DE37FA23B909A300E65753 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37F923B909A300E65753 /* Season.swift */; };
+		F0DE37FC23B909AC00E65753 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37FB23B909AC00E65753 /* Travel.swift */; };
+		F0DE37FE23B909B900E65753 /* Heartbreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37FD23B909B900E65753 /* Heartbreak.swift */; };
+		F0DE380023B909C700E65753 /* Sad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37FF23B909C700E65753 /* Sad.swift */; };
+		F0DE380223B909D000E65753 /* Beach.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE380123B909D000E65753 /* Beach.swift */; };
+		F0DE380423B909DA00E65753 /* Couple.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE380323B909DA00E65753 /* Couple.swift */; };
+		F0DE380623B909E900E65753 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE380523B909E900E65753 /* Friends.swift */; };
+		F0DE380823B909F700E65753 /* Hashtag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE380723B909F700E65753 /* Hashtag.swift */; };
+		F0E9E25B23B6709C0046688B /* Demo-1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E9E25A23B6709C0046688B /* Demo-1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +79,9 @@
 		BA8FFEF46B4A44BB272F6A2C /* Pods-CapSeen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapSeen.release.xcconfig"; path = "Target Support Files/Pods-CapSeen/Pods-CapSeen.release.xcconfig"; sourceTree = "<group>"; };
 		BE0641E3EE81855C145372AA /* Pods-CapSeen-CapSeenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapSeen-CapSeenUITests.debug.xcconfig"; path = "Target Support Files/Pods-CapSeen-CapSeenUITests/Pods-CapSeen-CapSeenUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F006BFD423B0792C00BA5ECB /* Lit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lit.swift; sourceTree = "<group>"; };
+		F007ABB123BA6652002097E4 /* Selfie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selfie.swift; sourceTree = "<group>"; };
+		F007ABB323BA72BC002097E4 /* dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dog.swift; sourceTree = "<group>"; };
+		F011378D23BF142300C6ABFF /* LitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitCell.swift; sourceTree = "<group>"; };
 		F0137FF323A9F28F00CA5301 /* CapSeen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapSeen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0137FF623A9F28F00CA5301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0137FF823A9F28F00CA5301 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +97,7 @@
 		F013801723A9F29200CA5301 /* CapSeenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapSeenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F013801B23A9F29200CA5301 /* Cap_TapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cap_TapUITests.swift; sourceTree = "<group>"; };
 		F013801D23A9F29200CA5301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F02D0A2923B760A0005601FF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F071EA1523ACA8BB009E4279 /* Short.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Short.swift; sourceTree = "<group>"; };
 		F071EA1723AD4DA6009E4279 /* attitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attitude.swift; sourceTree = "<group>"; };
 		F071EA1923AD4DEE009E4279 /* Sassy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sassy.swift; sourceTree = "<group>"; };
@@ -83,6 +107,22 @@
 		F071EA2123AD4E37009E4279 /* Lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
 		F071EA2323AD4E45009E4279 /* Romanctic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Romanctic.swift; sourceTree = "<group>"; };
 		F071EA2523AD4E54009E4279 /* BIo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIo.swift; sourceTree = "<group>"; };
+		F0DE37EB23B908E300E65753 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		F0DE37ED23B9095900E65753 /* Fitness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness.swift; sourceTree = "<group>"; };
+		F0DE37EF23B9096700E65753 /* Funny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funny.swift; sourceTree = "<group>"; };
+		F0DE37F123B9097600E65753 /* Inspirational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspirational.swift; sourceTree = "<group>"; };
+		F0DE37F323B9098000E65753 /* Life.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life.swift; sourceTree = "<group>"; };
+		F0DE37F523B9098E00E65753 /* Success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
+		F0DE37F723B9099900E65753 /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
+		F0DE37F923B909A300E65753 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		F0DE37FB23B909AC00E65753 /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
+		F0DE37FD23B909B900E65753 /* Heartbreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heartbreak.swift; sourceTree = "<group>"; };
+		F0DE37FF23B909C700E65753 /* Sad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sad.swift; sourceTree = "<group>"; };
+		F0DE380123B909D000E65753 /* Beach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach.swift; sourceTree = "<group>"; };
+		F0DE380323B909DA00E65753 /* Couple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Couple.swift; sourceTree = "<group>"; };
+		F0DE380523B909E900E65753 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		F0DE380723B909F700E65753 /* Hashtag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashtag.swift; sourceTree = "<group>"; };
+		F0E9E25A23B6709C0046688B /* Demo-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Demo-1.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +176,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F011378C23BF13A500C6ABFF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F011378D23BF142300C6ABFF /* LitCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F0137FEA23A9F28F00CA5301 = {
 			isa = PBXGroup;
 			children = (
@@ -161,8 +209,10 @@
 		F0137FF523A9F28F00CA5301 /* Cap-Tap */ = {
 			isa = PBXGroup;
 			children = (
+				F011378C23BF13A500C6ABFF /* Cell */,
 				F013802923AA051900CA5301 /* New Group */,
 				F0137FF623A9F28F00CA5301 /* AppDelegate.swift */,
+				F02D0A2923B760A0005601FF /* TableViewController.swift */,
 				F0137FF823A9F28F00CA5301 /* SceneDelegate.swift */,
 				F0137FFA23A9F28F00CA5301 /* ViewController.swift */,
 				F0137FFC23A9F28F00CA5301 /* Main.storyboard */,
@@ -170,6 +220,7 @@
 				F013800423A9F29200CA5301 /* LaunchScreen.storyboard */,
 				F013800723A9F29200CA5301 /* Info.plist */,
 				F0137FFF23A9F28F00CA5301 /* Cap_Tap.xcdatamodeld */,
+				F0E9E25A23B6709C0046688B /* Demo-1.swift */,
 			);
 			path = "Cap-Tap";
 			sourceTree = "<group>";
@@ -205,6 +256,23 @@
 				F071EA2323AD4E45009E4279 /* Romanctic.swift */,
 				F071EA2523AD4E54009E4279 /* BIo.swift */,
 				F006BFD423B0792C00BA5ECB /* Lit.swift */,
+				F0DE37EB23B908E300E65753 /* Food.swift */,
+				F0DE37ED23B9095900E65753 /* Fitness.swift */,
+				F0DE37EF23B9096700E65753 /* Funny.swift */,
+				F0DE37F123B9097600E65753 /* Inspirational.swift */,
+				F0DE37F323B9098000E65753 /* Life.swift */,
+				F0DE37F523B9098E00E65753 /* Success.swift */,
+				F0DE37F723B9099900E65753 /* Birthday.swift */,
+				F0DE37F923B909A300E65753 /* Season.swift */,
+				F0DE37FB23B909AC00E65753 /* Travel.swift */,
+				F0DE37FD23B909B900E65753 /* Heartbreak.swift */,
+				F0DE37FF23B909C700E65753 /* Sad.swift */,
+				F0DE380123B909D000E65753 /* Beach.swift */,
+				F0DE380323B909DA00E65753 /* Couple.swift */,
+				F0DE380523B909E900E65753 /* Friends.swift */,
+				F0DE380723B909F700E65753 /* Hashtag.swift */,
+				F007ABB123BA6652002097E4 /* Selfie.swift */,
+				F007ABB323BA72BC002097E4 /* dog.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -453,15 +521,35 @@
 				F006BFD523B0792C00BA5ECB /* Lit.swift in Sources */,
 				F071EA2023AD4E27009E4279 /* Boy.swift in Sources */,
 				F071EA2623AD4E54009E4279 /* BIo.swift in Sources */,
+				F0DE380223B909D000E65753 /* Beach.swift in Sources */,
 				F071EA1C23AD4E08009E4279 /* Girl.swift in Sources */,
+				F011378E23BF142300C6ABFF /* LitCell.swift in Sources */,
+				F0DE380023B909C700E65753 /* Sad.swift in Sources */,
+				F0DE37F423B9098000E65753 /* Life.swift in Sources */,
+				F0DE37EE23B9095900E65753 /* Fitness.swift in Sources */,
+				F0DE37F823B9099900E65753 /* Birthday.swift in Sources */,
+				F0DE37F223B9097600E65753 /* Inspirational.swift in Sources */,
+				F0E9E25B23B6709C0046688B /* Demo-1.swift in Sources */,
+				F0DE380623B909E900E65753 /* Friends.swift in Sources */,
 				F013800123A9F28F00CA5301 /* Cap_Tap.xcdatamodeld in Sources */,
+				F0DE380423B909DA00E65753 /* Couple.swift in Sources */,
 				F071EA1623ACA8BB009E4279 /* Short.swift in Sources */,
 				F0137FFB23A9F28F00CA5301 /* ViewController.swift in Sources */,
 				F0137FF723A9F28F00CA5301 /* AppDelegate.swift in Sources */,
+				F0DE37EC23B908E300E65753 /* Food.swift in Sources */,
+				F0DE37FA23B909A300E65753 /* Season.swift in Sources */,
+				F0DE37F623B9098E00E65753 /* Success.swift in Sources */,
+				F0DE37FE23B909B900E65753 /* Heartbreak.swift in Sources */,
+				F02D0A2A23B760A0005601FF /* TableViewController.swift in Sources */,
+				F0DE37F023B9096700E65753 /* Funny.swift in Sources */,
+				F007ABB423BA72BC002097E4 /* dog.swift in Sources */,
 				F071EA2223AD4E37009E4279 /* Lyrics.swift in Sources */,
 				F0137FF923A9F28F00CA5301 /* SceneDelegate.swift in Sources */,
+				F0DE380823B909F700E65753 /* Hashtag.swift in Sources */,
 				F071EA1823AD4DA6009E4279 /* attitude.swift in Sources */,
+				F0DE37FC23B909AC00E65753 /* Travel.swift in Sources */,
 				F071EA2423AD4E45009E4279 /* Romanctic.swift in Sources */,
+				F007ABB223BA6652002097E4 /* Selfie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +724,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7227VAQ96L;
 				INFOPLIST_FILE = "Cap-Tap/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -643,6 +732,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tipsy.com.Cap-Tap";
 				PRODUCT_NAME = CapSeen;
 				SWIFT_VERSION = 5.0;
@@ -656,6 +746,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7227VAQ96L;
 				INFOPLIST_FILE = "Cap-Tap/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -663,6 +754,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tipsy.com.Cap-Tap";
 				PRODUCT_NAME = CapSeen;
 				SWIFT_VERSION = 5.0;

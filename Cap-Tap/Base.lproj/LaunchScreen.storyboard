@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tipsy" translatesAutoresizingMaskIntoConstraints="NO" id="0QP-28-4Rq">
-                                <rect key="frame" x="0.0" y="613" width="375" height="199"/>
+                                <rect key="frame" x="0.0" y="663" width="375" height="149"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp Image 2019-12-23 at 7.37.54 PM" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-ex-ngm">
-                                <rect key="frame" x="0.0" y="191" width="375" height="430"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon 2" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-ex-ngm">
+                                <rect key="frame" x="16" y="191" width="375" height="430"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="1kR-eT-fFA"/>
                                     <constraint firstAttribute="height" constant="430" id="FHV-5a-Z1P"/>
@@ -40,14 +40,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="trailing" secondItem="0QP-28-4Rq" secondAttribute="trailing" id="36q-aW-dml"/>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="trailing" secondItem="0QP-28-4Rq" secondAttribute="trailing" id="36q-aW-dml">
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
                             <constraint firstItem="iAO-ex-ngm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="F8Z-4d-anj"/>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JOn-xV-sdJ"/>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JOn-xV-sdJ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
                             <constraint firstAttribute="bottomMargin" secondItem="0QP-28-4Rq" secondAttribute="bottom" constant="-34" id="VT9-So-Cq6"/>
                             <constraint firstItem="iAO-ex-ngm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZF4-cJ-8vq"/>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="leading" secondItem="0QP-28-4Rq" secondAttribute="leading" id="czh-FO-FJm"/>
-                            <constraint firstItem="0QP-28-4Rq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="569" id="xSi-q3-lwZ"/>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xlc-MJ-usb"/>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="leading" secondItem="0QP-28-4Rq" secondAttribute="leading" id="czh-FO-FJm">
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="0QP-28-4Rq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="569" id="xSi-q3-lwZ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="619"/>
+                            </constraint>
+                            <constraint firstItem="iAO-ex-ngm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xlc-MJ-usb">
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
@@ -83,6 +93,6 @@
     </scenes>
     <resources>
         <image name="Tipsy" width="1500" height="1500"/>
-        <image name="WhatsApp Image 2019-12-23 at 7.37.54 PM" width="1280" height="1280"/>
+        <image name="icon 2" width="1280" height="1280"/>
     </resources>
 </document>

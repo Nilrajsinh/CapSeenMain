@@ -8,6 +8,7 @@ target 'CapSeen' do
   # Pods for CapSeen
 
 pod 'Google-Mobile-Ads-SDK'
+pod 'FaveButton'
 
 
   target 'CapSeenTests' do

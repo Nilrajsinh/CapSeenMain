@@ -388,13 +388,13 @@ class Romanctic: UITableViewController, GADInterstitialDelegate {
         
     }
     
-    
+  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
-        if interstitial.isReady {
-           interstitial.present(fromRootViewController: self)
-         }
+       if interstitial.isReady {
+                   interstitial.present(fromRootViewController: self)
+                 }
         
         let cell = tableView.cellForRow(at: indexPath)
         UIPasteboard.general.string = cell?.textLabel?.text

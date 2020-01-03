@@ -130,10 +130,7 @@ class Lit: UITableViewController , GADInterstitialDelegate {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-             super.viewWillAppear(animated)
-             animateTable()
-         }
+  
     func createAndLoadInterstitial() -> GADInterstitial {
       var interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
       interstitial.delegate = self
@@ -201,6 +198,11 @@ class Lit: UITableViewController , GADInterstitialDelegate {
               
               
           }
+    
+    override func viewWillAppear(_ animated: Bool) {
+               super.viewWillAppear(animated)
+               animateTable()
+           }
     
 
     /*
