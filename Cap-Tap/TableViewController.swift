@@ -63,6 +63,8 @@ class TableViewController: UITableViewController,GADInterstitialDelegate {
                interstitial = createAndLoadInterstitial()
                 interstitial.delegate = self
         
+
+        
         
         
         let imageView = UIImageView(image: backgroundImage)
@@ -73,6 +75,22 @@ class TableViewController: UITableViewController,GADInterstitialDelegate {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+         let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
+               cell.layer.transform = rotationTransform
+               cell.alpha = 0.5
+               UIView.animate(withDuration: 1.2)
+               {
+                    cell.layer.transform = CATransform3DIdentity
+                    cell.alpha = 1.0
+               }
+    }
+    
+    
+    
     func interstitialDidDismissScreen(_ ad: GADInterstitial) {
            interstitial = createAndLoadInterstitial()
          }
@@ -110,6 +128,7 @@ class TableViewController: UITableViewController,GADInterstitialDelegate {
         cell.layer.borderWidth = 3
         
         
+        
         cell.textLabel?.text = MainData[indexPath.row]["Title"]
         
         // Configure the cell...
@@ -118,7 +137,10 @@ class TableViewController: UITableViewController,GADInterstitialDelegate {
 
         return cell
     }
-   
+    
+  
+
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         

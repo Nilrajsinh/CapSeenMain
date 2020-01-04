@@ -132,7 +132,7 @@ class Lit: UITableViewController , GADInterstitialDelegate {
     
   
     func createAndLoadInterstitial() -> GADInterstitial {
-      var interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
       interstitial.delegate = self
       interstitial.load(GADRequest())
       return interstitial
@@ -156,8 +156,10 @@ class Lit: UITableViewController , GADInterstitialDelegate {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = litCap[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
+      //  cell.textLabel?.text = litCap[indexPath.row]
+        
+        cell.Textlbl.text = litCap[indexPath.row]
 
         // Configure the cell...
 
@@ -169,11 +171,6 @@ class Lit: UITableViewController , GADInterstitialDelegate {
         if interstitial.isReady {
           interstitial.present(fromRootViewController: self)
         }
-        
-           
-           let cell = tableView.cellForRow(at: indexPath)
-           UIPasteboard.general.string = cell?.textLabel?.text
-           
            
        }
     
@@ -249,5 +246,11 @@ class Lit: UITableViewController , GADInterstitialDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+   
+    
+    
+    
+ 
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 import FaveButton
-
+import CoreData
 
 func color(_ rgbColor: Int) -> UIColor{
        return UIColor(
@@ -24,6 +24,7 @@ class LitCell: UITableViewCell ,FaveButtonDelegate {
 
     
    
+     var UserData: [NSManagedObject] = []
     
     
     
@@ -61,5 +62,59 @@ class LitCell: UITableViewCell ,FaveButtonDelegate {
 
         // Configure the view for the selected state
     }
+    
+    
+    
+    func save(email:String) {
+      
+      guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+        return
+      }
+      
+      // 1
+      let managedContext =
+        appDelegate.persistentContainer.viewContext
+      
+      // 2
+      let entity =
+        NSEntityDescription.entity(forEntityName: "Cap",
+                                   in: managedContext)!
+      
+      let person = NSManagedObject(entity: entity,
+                                   insertInto: managedContext)
+      
+      // 3
+        person.setValue(Textlbl.text, forKeyPath: "like")
+      
+      
+      // 4
+      do {
+        try managedContext.save()
+        UserData.append(person)
+       
+      } catch let error as NSError {
+        print("Could not save. \(error), \(error.userInfo)")
+      }
+    }
+    
+    
+    @IBAction func Copy(_ sender: Any) {
+        
+        UIPasteboard.general.string = Textlbl.text
+               
+    }
+    
+    
+    @IBAction func Like(_ sender: Any) {
+        
+        print(Textlbl.text!)
+        
+        self.save(email: Textlbl.text!)
+        
+    }
+    
 
+    
+    
 }
