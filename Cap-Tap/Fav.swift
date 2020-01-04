@@ -34,6 +34,9 @@ class Fav: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(true)
+                     
+        listData()
+
            tableView.reloadData()
        }
     
@@ -55,11 +58,6 @@ class Fav: UITableViewController {
             tableView.reloadData()
                
            }
-
-    
-  
-
-    
 
     // MARK: - Table view data source
 
@@ -84,6 +82,10 @@ class Fav: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
 
 

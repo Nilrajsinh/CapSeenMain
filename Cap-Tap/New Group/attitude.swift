@@ -119,9 +119,9 @@ class attitude: UITableViewController, GADInterstitialDelegate {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AttitudeCell
         
-        cell.textLabel?.text = attidu[indexPath.row] 
+        cell.Textlbl?.text = attidu[indexPath.row] 
 
         // Configure the cell...
 
