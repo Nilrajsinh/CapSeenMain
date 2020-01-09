@@ -152,8 +152,8 @@ class Lyrics: UITableViewController, GADInterstitialDelegate {
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = Lyrics[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
+        cell.Textlbl?.text = Lyrics[indexPath.row]
 
         // Configure the cell...
 
@@ -193,8 +193,7 @@ class Lyrics: UITableViewController, GADInterstitialDelegate {
            interstitial.present(fromRootViewController: self)
          }
         
-        let cell = tableView.cellForRow(at: indexPath)
-        UIPasteboard.general.string = cell?.textLabel?.text
+      
         
         
     }

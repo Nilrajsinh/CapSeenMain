@@ -224,11 +224,7 @@ class Hashtag: UITableViewController , GADInterstitialDelegate{
                  interstitial.present(fromRootViewController: self)
                }
         
-         
-         let cell = tableView.cellForRow(at: indexPath)
-         UIPasteboard.general.string = cell?.textLabel?.text
-         
-         
+      
      }
     
     func createAndLoadInterstitial() -> GADInterstitial {
@@ -254,9 +250,9 @@ class Hashtag: UITableViewController , GADInterstitialDelegate{
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
-        cell.textLabel?.text = hashtag[indexPath.row]
+        cell.Textlbl?.text = hashtag[indexPath.row]
                
         
         // Configure the cell...

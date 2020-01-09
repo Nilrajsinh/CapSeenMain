@@ -288,9 +288,6 @@ class Beach: UITableViewController , GADInterstitialDelegate{
                }
         
          
-         let cell = tableView.cellForRow(at: indexPath)
-         UIPasteboard.general.string = cell?.textLabel?.text
-         
          
      }
     func createAndLoadInterstitial() -> GADInterstitial {
@@ -316,10 +313,10 @@ class Beach: UITableViewController , GADInterstitialDelegate{
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
         // Configure the cell...
-        cell.textLabel?.text = Beach[indexPath.row]
+        cell.Textlbl?.text = Beach[indexPath.row]
                
 
         return cell

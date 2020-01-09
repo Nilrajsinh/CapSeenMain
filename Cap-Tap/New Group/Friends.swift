@@ -121,10 +121,7 @@ class Friends: UITableViewController , GADInterstitialDelegate{
                  interstitial.present(fromRootViewController: self)
                }
         
-         
-         let cell = tableView.cellForRow(at: indexPath)
-         UIPasteboard.general.string = cell?.textLabel?.text
-         
+       
          
      }
     
@@ -142,10 +139,10 @@ class Friends: UITableViewController , GADInterstitialDelegate{
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
         // Configure the cell...
-        cell.textLabel?.text = friends[indexPath.row]
+        cell.Textlbl?.text = friends[indexPath.row]
                
 
         return cell

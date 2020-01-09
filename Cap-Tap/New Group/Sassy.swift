@@ -215,8 +215,8 @@ class Sassy: UITableViewController, GADInterstitialDelegate {
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = sassy[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
+        cell.Textlbl?.text = sassy[indexPath.row]
 
         // Configure the cell...
 
@@ -259,8 +259,8 @@ class Sassy: UITableViewController, GADInterstitialDelegate {
      }
     
         
-        let cell = tableView.cellForRow(at: indexPath)
-        UIPasteboard.general.string = cell?.textLabel?.text
+//        let cell = tableView.cellForRow(at: indexPath)
+//        UIPasteboard.general.string = cell?.textLabel?.text
         
         
     }

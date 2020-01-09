@@ -125,10 +125,7 @@ class Success: UITableViewController , GADInterstitialDelegate {
                }
         
          
-         let cell = tableView.cellForRow(at: indexPath)
-         UIPasteboard.general.string = cell?.textLabel?.text
-         
-         
+       
      }
     
     // MARK: - Table view data source
@@ -145,8 +142,8 @@ class Success: UITableViewController , GADInterstitialDelegate {
 
  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = success[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
+        cell.Textlbl?.text = success[indexPath.row]
                
 
         // Configure the cell...

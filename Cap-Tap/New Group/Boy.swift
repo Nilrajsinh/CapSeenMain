@@ -139,8 +139,8 @@ class Boy: UITableViewController, GADInterstitialDelegate {
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = boyy[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
+        cell.Textlbl?.text = boyy[indexPath.row]
 
         // Configure the cell...
 
@@ -181,10 +181,6 @@ class Boy: UITableViewController, GADInterstitialDelegate {
         if interstitial.isReady {
            interstitial.present(fromRootViewController: self)
          }
-        
-        
-        let cell = tableView.cellForRow(at: indexPath)
-        UIPasteboard.general.string = cell?.textLabel?.text
         
         
     }

@@ -32,6 +32,14 @@ class LitCell: UITableViewCell ,FaveButtonDelegate {
     
     @IBOutlet weak var SaveBtn: UIButton!
     
+    @IBAction func Like(_ sender: Any) {
+           
+           print(Textlbl.text!)
+           
+           self.save(email: Textlbl.text!)
+           
+       }
+    
     func faveButton(_ faveButton: FaveButton, didSelected selected: Bool) {
         
     }
@@ -106,13 +114,7 @@ class LitCell: UITableViewCell ,FaveButtonDelegate {
     }
     
     
-    @IBAction func Like(_ sender: Any) {
-        
-        print(Textlbl.text!)
-        
-        self.save(email: Textlbl.text!)
-        
-    }
+   
     
 
     

@@ -119,7 +119,7 @@ class attitude: UITableViewController, GADInterstitialDelegate {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AttitudeCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
         
         cell.Textlbl?.text = attidu[indexPath.row] 
 
@@ -135,8 +135,7 @@ class attitude: UITableViewController, GADInterstitialDelegate {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let cell = tableView.cellForRow(at: indexPath)
-        UIPasteboard.general.string = cell?.textLabel?.text
+       
         
         
     }

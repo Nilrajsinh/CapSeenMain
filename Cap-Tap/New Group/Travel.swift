@@ -134,9 +134,9 @@ class Travel: UITableViewController , GADInterstitialDelegate{
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
-        cell.textLabel?.text = travell[indexPath.row]
+        cell.Textlbl?.text = travell[indexPath.row]
                
         // Configure the cell...
 
@@ -151,9 +151,7 @@ class Travel: UITableViewController , GADInterstitialDelegate{
                }
         
          
-         let cell = tableView.cellForRow(at: indexPath)
-         UIPasteboard.general.string = cell?.textLabel?.text
-         
+        
          
      }
     func animateTable() {

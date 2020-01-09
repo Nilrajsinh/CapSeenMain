@@ -302,12 +302,7 @@ class Couple: UITableViewController , GADInterstitialDelegate{
                  interstitial.present(fromRootViewController: self)
                }
         
-         
-         let cell = tableView.cellForRow(at: indexPath)
-         UIPasteboard.general.string = cell?.textLabel?.text
-         
-         
-        
+      
      }
     func createAndLoadInterstitial() -> GADInterstitial {
          var interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
@@ -331,9 +326,9 @@ class Couple: UITableViewController , GADInterstitialDelegate{
 
  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
-        cell.textLabel?.text = Coupl[indexPath.row]
+        cell.Textlbl?.text = Coupl[indexPath.row]
                
         // Configure the cell...
 

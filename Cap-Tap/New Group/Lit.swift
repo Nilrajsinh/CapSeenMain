@@ -115,6 +115,9 @@ class Lit: UITableViewController , GADInterstitialDelegate {
 
     override func viewDidLoad() {
         
+        
+    
+        
         super.viewDidLoad()
 
          interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")

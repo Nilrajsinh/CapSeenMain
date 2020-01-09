@@ -117,11 +117,7 @@ class Birthday: UITableViewController , GADInterstitialDelegate {
                  interstitial.present(fromRootViewController: self)
                }
         
-         
-         let cell = tableView.cellForRow(at: indexPath)
-         UIPasteboard.general.string = cell?.textLabel?.text
-         
-         
+        
      }
     
     func createAndLoadInterstitial() -> GADInterstitial {
@@ -147,9 +143,9 @@ class Birthday: UITableViewController , GADInterstitialDelegate {
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
-        cell.textLabel?.text = Birthday[indexPath.row]
+        cell.Textlbl?.text = Birthday[indexPath.row]
                
         // Configure the cell...
 

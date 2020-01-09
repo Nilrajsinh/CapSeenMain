@@ -35,7 +35,6 @@
 		F071EA2423AD4E45009E4279 /* Romanctic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA2323AD4E45009E4279 /* Romanctic.swift */; };
 		F071EA2623AD4E54009E4279 /* BIo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA2523AD4E54009E4279 /* BIo.swift */; };
 		F0851C9623C0F1520063C234 /* Fav.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0851C9523C0F1520063C234 /* Fav.swift */; };
-		F093F34323C10330004C0F0C /* AttitudeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F093F34223C10330004C0F0C /* AttitudeCell.swift */; };
 		F0DE37EC23B908E300E65753 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37EB23B908E300E65753 /* Food.swift */; };
 		F0DE37EE23B9095900E65753 /* Fitness.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37ED23B9095900E65753 /* Fitness.swift */; };
 		F0DE37F023B9096700E65753 /* Funny.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE37EF23B9096700E65753 /* Funny.swift */; };
@@ -111,7 +110,6 @@
 		F071EA2323AD4E45009E4279 /* Romanctic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Romanctic.swift; sourceTree = "<group>"; };
 		F071EA2523AD4E54009E4279 /* BIo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIo.swift; sourceTree = "<group>"; };
 		F0851C9523C0F1520063C234 /* Fav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fav.swift; sourceTree = "<group>"; };
-		F093F34223C10330004C0F0C /* AttitudeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttitudeCell.swift; sourceTree = "<group>"; };
 		F0DE37EB23B908E300E65753 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		F0DE37ED23B9095900E65753 /* Fitness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness.swift; sourceTree = "<group>"; };
 		F0DE37EF23B9096700E65753 /* Funny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funny.swift; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				F011378D23BF142300C6ABFF /* LitCell.swift */,
-				F093F34223C10330004C0F0C /* AttitudeCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -546,7 +543,6 @@
 				F0DE37F623B9098E00E65753 /* Success.swift in Sources */,
 				F0DE37FE23B909B900E65753 /* Heartbreak.swift in Sources */,
 				F02D0A2A23B760A0005601FF /* TableViewController.swift in Sources */,
-				F093F34323C10330004C0F0C /* AttitudeCell.swift in Sources */,
 				F0DE37F023B9096700E65753 /* Funny.swift in Sources */,
 				F007ABB423BA72BC002097E4 /* dog.swift in Sources */,
 				F071EA2223AD4E37009E4279 /* Lyrics.swift in Sources */,

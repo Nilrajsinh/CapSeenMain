@@ -133,8 +133,8 @@ class Savage: UITableViewController, GADInterstitialDelegate {
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = Savage[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
+        cell.Textlbl?.text = Savage[indexPath.row]
 
         // Configure the cell...
 
@@ -147,10 +147,6 @@ class Savage: UITableViewController, GADInterstitialDelegate {
     if interstitial.isReady {
        interstitial.present(fromRootViewController: self)
      }
-    
-        
-        let cell = tableView.cellForRow(at: indexPath)
-        UIPasteboard.general.string = cell?.textLabel?.text
         
         
     }

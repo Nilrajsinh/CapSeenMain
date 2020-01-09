@@ -471,8 +471,8 @@ class Short: UITableViewController, GADInterstitialDelegate {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = short[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
+        cell.Textlbl?.text = short[indexPath.row]
         // Configure the cell...
 
         return cell
@@ -486,8 +486,7 @@ class Short: UITableViewController, GADInterstitialDelegate {
         
          tableView.deselectRow(at: indexPath, animated: true)
                
-               let cell = tableView.cellForRow(at: indexPath)
-               UIPasteboard.general.string = cell?.textLabel?.text
+             
     }
 
     /*

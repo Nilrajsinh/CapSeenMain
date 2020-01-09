@@ -383,17 +383,15 @@ class Food: UITableViewController , GADInterstitialDelegate{
                 interstitial.present(fromRootViewController: self)
               }
         
-        let cell = tableView.cellForRow(at: indexPath)
-        UIPasteboard.general.string = cell?.textLabel?.text
-        
+       
         
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
-        cell.textLabel?.text = food[indexPath.row]
+        cell.Textlbl?.text = food[indexPath.row]
         // Configure the cell...
 
         return cell

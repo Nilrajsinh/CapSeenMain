@@ -141,8 +141,8 @@ class BIo: UITableViewController, GADInterstitialDelegate {
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = Bio[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
+        cell.Textlbl?.text = Bio[indexPath.row]
 
         // Configure the cell...
 
@@ -153,9 +153,7 @@ class BIo: UITableViewController, GADInterstitialDelegate {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let cell = tableView.cellForRow(at: indexPath)
-        UIPasteboard.general.string = cell?.textLabel?.text
-        
+       
         if interstitial.isReady {
            interstitial.present(fromRootViewController: self)
          }
