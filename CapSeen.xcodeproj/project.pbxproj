@@ -23,6 +23,8 @@
 		F013801123A9F29200CA5301 /* Cap_TapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013801023A9F29200CA5301 /* Cap_TapTests.swift */; };
 		F013801C23A9F29200CA5301 /* Cap_TapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013801B23A9F29200CA5301 /* Cap_TapUITests.swift */; };
 		F02D0A2A23B760A0005601FF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D0A2923B760A0005601FF /* TableViewController.swift */; };
+		F052C3F523C78AB90024A028 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052C3F423C78AB90024A028 /* HomeCell.swift */; };
+		F052C3F723C78B150024A028 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052C3F623C78B150024A028 /* homeView.swift */; };
 		F071EA1623ACA8BB009E4279 /* Short.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1523ACA8BB009E4279 /* Short.swift */; };
 		F071EA1823AD4DA6009E4279 /* attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1723AD4DA6009E4279 /* attitude.swift */; };
 		F071EA1A23AD4DEE009E4279 /* Sassy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1923AD4DEE009E4279 /* Sassy.swift */; };
@@ -97,6 +99,8 @@
 		F013801B23A9F29200CA5301 /* Cap_TapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cap_TapUITests.swift; sourceTree = "<group>"; };
 		F013801D23A9F29200CA5301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F02D0A2923B760A0005601FF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F052C3F423C78AB90024A028 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		F052C3F623C78B150024A028 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
 		F071EA1523ACA8BB009E4279 /* Short.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Short.swift; sourceTree = "<group>"; };
 		F071EA1723AD4DA6009E4279 /* attitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attitude.swift; sourceTree = "<group>"; };
 		F071EA1923AD4DEE009E4279 /* Sassy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sassy.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 				F013800723A9F29200CA5301 /* Info.plist */,
 				F0137FFF23A9F28F00CA5301 /* Cap_Tap.xcdatamodeld */,
 				F0851C9523C0F1520063C234 /* Fav.swift */,
+				F052C3F423C78AB90024A028 /* HomeCell.swift */,
+				F052C3F623C78B150024A028 /* homeView.swift */,
 			);
 			path = "Cap-Tap";
 			sourceTree = "<group>";
@@ -533,6 +539,7 @@
 				F013800123A9F28F00CA5301 /* Cap_Tap.xcdatamodeld in Sources */,
 				F0DE380423B909DA00E65753 /* Couple.swift in Sources */,
 				F071EA1623ACA8BB009E4279 /* Short.swift in Sources */,
+				F052C3F723C78B150024A028 /* homeView.swift in Sources */,
 				F0137FF723A9F28F00CA5301 /* AppDelegate.swift in Sources */,
 				F0DE37EC23B908E300E65753 /* Food.swift in Sources */,
 				F0DE37FA23B909A300E65753 /* Season.swift in Sources */,
@@ -545,6 +552,7 @@
 				F071EA2223AD4E37009E4279 /* Lyrics.swift in Sources */,
 				F0137FF923A9F28F00CA5301 /* SceneDelegate.swift in Sources */,
 				F0DE380823B909F700E65753 /* Hashtag.swift in Sources */,
+				F052C3F523C78AB90024A028 /* HomeCell.swift in Sources */,
 				F071EA1823AD4DA6009E4279 /* attitude.swift in Sources */,
 				F0DE37FC23B909AC00E65753 /* Travel.swift in Sources */,
 				F071EA2423AD4E45009E4279 /* Romanctic.swift in Sources */,

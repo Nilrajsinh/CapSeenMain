@@ -15,75 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tipsy" translatesAutoresizingMaskIntoConstraints="NO" id="0QP-28-4Rq">
-                                <rect key="frame" x="0.0" y="663" width="375" height="149"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lit" translatesAutoresizingMaskIntoConstraints="NO" id="aNO-ha-FaB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp Image 2019-12-23 at 7.37.54 PM" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-ex-ngm">
-                                <rect key="frame" x="16" y="191" width="375" height="430"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="1kR-eT-fFA"/>
-                                    <constraint firstAttribute="height" constant="430" id="FHV-5a-Z1P"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="1kR-eT-fFA"/>
-                                        <exclude reference="FHV-5a-Z1P"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="1kR-eT-fFA"/>
-                                        <include reference="FHV-5a-Z1P"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xtF-65-GDP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="rbt-Xq-jld">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8b-sf-cEI">
+                                            <rect key="frame" x="0.0" y="0.0" width="135" height="684"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="jbX-5v-OsP">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="684"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="regular"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tipsy" translatesAutoresizingMaskIntoConstraints="NO" id="FFX-KP-oMG">
+                                            <rect key="frame" x="0.0" y="674" width="375" height="138"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="trailing" secondItem="0QP-28-4Rq" secondAttribute="trailing" id="36q-aW-dml">
-                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
-                            </constraint>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="F8Z-4d-anj"/>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JOn-xV-sdJ">
-                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
-                            </constraint>
-                            <constraint firstAttribute="bottomMargin" secondItem="0QP-28-4Rq" secondAttribute="bottom" constant="-34" id="VT9-So-Cq6"/>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZF4-cJ-8vq"/>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="leading" secondItem="0QP-28-4Rq" secondAttribute="leading" id="czh-FO-FJm">
-                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
-                            </constraint>
-                            <constraint firstItem="0QP-28-4Rq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="569" id="xSi-q3-lwZ">
-                                <variation key="heightClass=regular-widthClass=compact" constant="619"/>
-                            </constraint>
-                            <constraint firstItem="iAO-ex-ngm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xlc-MJ-usb">
-                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
-                            </constraint>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="36q-aW-dml"/>
-                                <exclude reference="F8Z-4d-anj"/>
-                                <exclude reference="JOn-xV-sdJ"/>
-                                <exclude reference="ZF4-cJ-8vq"/>
-                                <exclude reference="czh-FO-FJm"/>
-                                <exclude reference="xlc-MJ-usb"/>
-                                <exclude reference="VT9-So-Cq6"/>
-                                <exclude reference="xSi-q3-lwZ"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="36q-aW-dml"/>
-                                <include reference="F8Z-4d-anj"/>
-                                <include reference="JOn-xV-sdJ"/>
-                                <include reference="ZF4-cJ-8vq"/>
-                                <include reference="czh-FO-FJm"/>
-                                <include reference="xlc-MJ-usb"/>
-                                <include reference="VT9-So-Cq6"/>
-                                <include reference="xSi-q3-lwZ"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -92,7 +56,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Lit" width="1080" height="1026"/>
         <image name="Tipsy" width="1500" height="1500"/>
-        <image name="WhatsApp Image 2019-12-23 at 7.37.54 PM" width="1280" height="1280"/>
     </resources>
 </document>
