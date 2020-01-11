@@ -268,7 +268,7 @@ class Hashtag: UITableViewController , GADInterstitialDelegate{
 
         cell.Textlbl?.text = hashtag[indexPath.row]
                
-        
+        share = hashtag[indexPath.row]
         // Configure the cell...
 
         return cell
@@ -344,5 +344,15 @@ class Hashtag: UITableViewController , GADInterstitialDelegate{
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+    
+     var share = ""
 
 }

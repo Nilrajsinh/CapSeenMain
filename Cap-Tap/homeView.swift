@@ -72,6 +72,11 @@ class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDele
         
     }
     
+    
+ 
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

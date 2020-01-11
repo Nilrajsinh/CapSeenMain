@@ -162,6 +162,8 @@ class BIo: UITableViewController, GADInterstitialDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
         cell.Textlbl?.text = Bio[indexPath.row]
 
+        share = Bio[indexPath.row]
+        
         // Configure the cell...
 
         return cell
@@ -254,4 +256,14 @@ class BIo: UITableViewController, GADInterstitialDelegate {
     }
     */
 
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+     var share = ""
+    
 }

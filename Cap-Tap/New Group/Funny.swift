@@ -299,6 +299,7 @@ class Funny: UITableViewController , GADInterstitialDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
          cell.Textlbl?.text = Funny[indexPath.row]
+        share = Funny[indexPath.row]
         
         // Configure the cell...
 
@@ -387,5 +388,13 @@ class Funny: UITableViewController , GADInterstitialDelegate {
                super.viewWillAppear(animated)
                animateTable()
            }
+    @IBAction func ShareBtn(_ sender: UIButton){
 
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+ var share = ""
+    
 }

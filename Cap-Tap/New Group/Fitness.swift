@@ -277,6 +277,8 @@ let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
          cell.Textlbl?.text = Fitness[indexPath.row]
 
+        share = Fitness[indexPath.row]
+        
         // Configure the cell...
 
         return cell
@@ -322,6 +324,16 @@ let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
                super.viewWillAppear(animated)
                animateTable()
            }
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+     var share = ""
+    
     
 }
 

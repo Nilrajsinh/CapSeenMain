@@ -113,10 +113,5 @@ class LitCell: UITableViewCell ,FaveButtonDelegate {
                
     }
     
-    
-   
-    
 
-    
-    
 }

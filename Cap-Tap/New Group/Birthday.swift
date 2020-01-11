@@ -162,7 +162,7 @@ class Birthday: UITableViewController , GADInterstitialDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
         cell.Textlbl?.text = Birthday[indexPath.row]
-               
+               share = Birthday[indexPath.row]
         // Configure the cell...
 
         return cell
@@ -238,5 +238,15 @@ class Birthday: UITableViewController , GADInterstitialDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
 
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+    
+ var share = ""
+    
 }

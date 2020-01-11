@@ -130,7 +130,9 @@ class attitude: UITableViewController, GADInterstitialDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
         
-        cell.Textlbl?.text = attidu[indexPath.row] 
+        cell.Textlbl?.text = attidu[indexPath.row]
+        share = attidu[indexPath.row]
+        
 
         // Configure the cell...
 
@@ -222,5 +224,17 @@ class attitude: UITableViewController, GADInterstitialDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+     var share = ""
+    
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+    
 
 }

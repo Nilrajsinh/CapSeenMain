@@ -52,7 +52,7 @@ class TableViewController: UITableViewController,GADInterstitialDelegate {
     let backgroundImage = UIImage(#imageLiteral(resourceName: "bg"))
     
    
-
+ 
     
 
     override func viewDidLoad() {
@@ -155,6 +155,8 @@ class TableViewController: UITableViewController,GADInterstitialDelegate {
         self.navigationController?.pushViewController(controller!, animated: true)
         
     }
+    
+
 
     /*
     // Override to support conditional editing of the table view.

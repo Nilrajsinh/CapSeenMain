@@ -159,7 +159,7 @@ class Friends: UITableViewController , GADInterstitialDelegate{
 
         // Configure the cell...
         cell.Textlbl?.text = friends[indexPath.row]
-               
+               share = friends[indexPath.row]
 
         return cell
     }
@@ -234,5 +234,15 @@ class Friends: UITableViewController , GADInterstitialDelegate{
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+    
+     var share = ""
 
 }

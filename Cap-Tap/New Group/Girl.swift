@@ -170,6 +170,8 @@ class Girl: UITableViewController, GADInterstitialDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
         cell.Textlbl?.text = Girl[indexPath.row]
 
+       share = Girl[indexPath.row]
+        
         // Configure the cell...
 
         return cell
@@ -260,5 +262,15 @@ class Girl: UITableViewController, GADInterstitialDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+     var share = ""
+    
 
 }

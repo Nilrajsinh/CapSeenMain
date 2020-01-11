@@ -14,7 +14,6 @@ class Lit: UITableViewController , GADInterstitialDelegate {
     
     
     
-    
     var litCap = [
            "I am not picky. I just know what i want",
            "But my personality is lit !",
@@ -134,6 +133,7 @@ class Lit: UITableViewController , GADInterstitialDelegate {
         super.viewDidLoad()
         
         
+        
 
          interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
         let request = GADRequest()
@@ -147,6 +147,17 @@ class Lit: UITableViewController , GADInterstitialDelegate {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+   
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+      
+        let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+          activityvc.popoverPresentationController?.sourceView = self.view
+          present(activityvc, animated: true, completion: nil)
+      }
+      
     
   
     func createAndLoadInterstitial() -> GADInterstitial {
@@ -173,14 +184,19 @@ class Lit: UITableViewController , GADInterstitialDelegate {
     }
 
     
+    var share = ""
+    
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
       //  cell.textLabel?.text = litCap[indexPath.row]
         
+        
+        share = litCap[indexPath.row]
+  
         cell.Textlbl.text = litCap[indexPath.row]
-
-        // Configure the cell...
-
+      
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -220,6 +236,8 @@ class Lit: UITableViewController , GADInterstitialDelegate {
            }
     
 
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -265,10 +283,6 @@ class Lit: UITableViewController , GADInterstitialDelegate {
     }
     */
     
-    
-   
-    
-    
-    
+
  
 }

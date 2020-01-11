@@ -331,7 +331,7 @@ class Beach: UITableViewController , GADInterstitialDelegate{
 
         // Configure the cell...
         cell.Textlbl?.text = Beach[indexPath.row]
-               
+               share = Beach[indexPath.row]
 
         return cell
     }
@@ -406,5 +406,15 @@ class Beach: UITableViewController , GADInterstitialDelegate{
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+    
+     var share = ""
 
 }

@@ -407,6 +407,8 @@ let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
 
         cell.Textlbl?.text = food[indexPath.row]
+        share = food[indexPath.row]
+        
         // Configure the cell...
 
         return cell
@@ -483,5 +485,14 @@ let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
 
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+ var share = ""
+    
 }

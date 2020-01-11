@@ -168,7 +168,7 @@ class Heartbreak: UITableViewController , GADInterstitialDelegate {
 
         cell.Textlbl?.text = heartbreak[indexPath.row]
                
-        
+        share = heartbreak[indexPath.row]
         // Configure the cell...
 
         return cell
@@ -245,4 +245,15 @@ class Heartbreak: UITableViewController , GADInterstitialDelegate {
     }
     */
 
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+ 
+    }
+     var share = ""
+    
 }

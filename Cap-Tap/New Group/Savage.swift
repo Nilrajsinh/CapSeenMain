@@ -146,6 +146,8 @@ let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! LitCell
         cell.Textlbl?.text = Savage[indexPath.row]
+        share = Savage[indexPath.row]
+        
 
         // Configure the cell...
 
@@ -235,5 +237,15 @@ let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
 
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+    
+ var share = ""
+    
 }

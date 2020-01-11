@@ -298,7 +298,7 @@ class Inspirational: UITableViewController , GADInterstitialDelegate{
 
         cell.Textlbl?.text = insp[indexPath.row]
                
-        
+        share = insp[indexPath.row]
         // Configure the cell...
 
         return cell
@@ -377,4 +377,15 @@ class Inspirational: UITableViewController , GADInterstitialDelegate{
     }
     */
 
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+    
+     var share = ""
+    
 }

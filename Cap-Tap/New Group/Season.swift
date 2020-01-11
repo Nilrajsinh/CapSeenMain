@@ -289,7 +289,7 @@ class Season: UITableViewController , GADInterstitialDelegate{
 
         cell.Textlbl?.text = season[indexPath.row]
                
-        
+        share = season[indexPath.row]
         // Configure the cell...
 
         return cell
@@ -366,4 +366,14 @@ class Season: UITableViewController , GADInterstitialDelegate{
     }
     */
 
+    
+    @IBAction func ShareBtn(_ sender: UIButton){
+
+        
+          let activityvc = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+            activityvc.popoverPresentationController?.sourceView = self.view
+            present(activityvc, animated: true, completion: nil)
+        }
+     var share = ""
+    
 }
