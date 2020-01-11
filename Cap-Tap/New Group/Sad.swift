@@ -95,6 +95,10 @@ class Sad: UITableViewController, GADInterstitialDelegate {
     "I wish you were there for me when I needed you the most",
     "The most precious gift I got from you was your love"]
     
+    
+    let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
@@ -103,7 +107,17 @@ class Sad: UITableViewController, GADInterstitialDelegate {
         interstitial = createAndLoadInterstitial()
          interstitial.delegate = self
         
-
+        
+        let imageView = UIImageView(image: backgroundImage)
+                   self.tableView.backgroundView = imageView
+        
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+               let blurView = UIVisualEffectView(effect: blurEffect)
+               blurView.frame = imageView.bounds
+               imageView.addSubview(blurView)
+               super.viewDidLoad()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

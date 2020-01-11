@@ -12,6 +12,9 @@ import GoogleMobileAds
 class Lit: UITableViewController , GADInterstitialDelegate {
      var interstitial: GADInterstitial!
     
+    
+    
+    
     var litCap = [
            "I am not picky. I just know what i want",
            "But my personality is lit !",
@@ -112,13 +115,25 @@ class Lit: UITableViewController , GADInterstitialDelegate {
            " I'm not always Sarcastic. Sometimes, I'm sleeping ",
            " In love with the idea of ruining expectations "
        ]
+    
+    
+       let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
+    
+    
 
     override func viewDidLoad() {
         
+        let imageView = UIImageView(image: backgroundImage)
+               self.tableView.backgroundView = imageView
         
     
-        
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = imageView.bounds
+        imageView.addSubview(blurView)
         super.viewDidLoad()
+        
+        
 
          interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
         let request = GADRequest()

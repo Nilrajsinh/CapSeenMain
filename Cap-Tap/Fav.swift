@@ -11,6 +11,8 @@ import CoreData
 
 class Fav: UITableViewController {
     
+    let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
+    
     
     var managedContextObject:NSManagedObjectContext!
          //model data: table's row
@@ -21,6 +23,19 @@ class Fav: UITableViewController {
     
 
     override func viewDidLoad() {
+        
+        let imageView = UIImageView(image: backgroundImage)
+                          self.tableView.backgroundView = imageView
+               
+               
+               
+               let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+                      let blurView = UIVisualEffectView(effect: blurEffect)
+                      blurView.frame = imageView.bounds
+                      imageView.addSubview(blurView)
+                      super.viewDidLoad()
+        
+        
         super.viewDidLoad()
           super.viewWillAppear(true)
 

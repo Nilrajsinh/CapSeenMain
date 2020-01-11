@@ -233,6 +233,9 @@ class Inspirational: UITableViewController , GADInterstitialDelegate{
 
     "If you haven’t tried something that makes your heart go crazy, then you haven’t lived at all."]
 
+    let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -242,7 +245,16 @@ class Inspirational: UITableViewController , GADInterstitialDelegate{
         interstitial = createAndLoadInterstitial()
          interstitial.delegate = self
         
-
+        
+        let imageView = UIImageView(image: backgroundImage)
+                   self.tableView.backgroundView = imageView
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+               let blurView = UIVisualEffectView(effect: blurEffect)
+               blurView.frame = imageView.bounds
+               imageView.addSubview(blurView)
+               super.viewDidLoad()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

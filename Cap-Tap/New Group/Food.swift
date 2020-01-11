@@ -338,7 +338,10 @@ class Food: UITableViewController , GADInterstitialDelegate{
 
     "To live life to the fullest you need to have a full stomach too."]
     
-
+let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -347,6 +350,18 @@ class Food: UITableViewController , GADInterstitialDelegate{
         interstitial.load(request)
         interstitial = createAndLoadInterstitial()
          interstitial.delegate = self
+        
+        let imageView = UIImageView(image: backgroundImage)
+                   self.tableView.backgroundView = imageView
+        
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+               let blurView = UIVisualEffectView(effect: blurEffect)
+               blurView.frame = imageView.bounds
+               imageView.addSubview(blurView)
+               super.viewDidLoad()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

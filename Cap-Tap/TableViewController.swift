@@ -14,6 +14,8 @@ class TableViewController: UITableViewController,GADInterstitialDelegate {
     let cellSpacingHeight: CGFloat = 5
     
         var interstitial: GADInterstitial!
+
+
     
     
     

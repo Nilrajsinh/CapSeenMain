@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,GADInterstitialDelegate {
     
-    
+         var interstitial: GADInterstitial!
     
       var Cetgory = [
         ["Title":"Attitude","Image":#imageLiteral(resourceName: "Attitude"),"Controller":"Attitude"],
@@ -19,12 +20,12 @@ class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDele
           ["Title":"Savage","Controller":"Savage","Image":#imageLiteral(resourceName: "Savage")],
           ["Title":"Boy","Controller":"Boy","Image":#imageLiteral(resourceName: "boy")],
           ["Title":"Lit","Controller":"LIT","Image":#imageLiteral(resourceName: "Lit")],
-          ["Title":"Bio","Controller":"Bio","Image":#imageLiteral(resourceName: "Attitude")],
-          ["Title":"Romantic","Controller":"Romantic","Image":#imageLiteral(resourceName: "Attitude")],
+          ["Title":"Bio","Controller":"Bio","Image":#imageLiteral(resourceName: "BIO")],
+          ["Title":"Romantic","Controller":"Romantic","Image":#imageLiteral(resourceName: "Romantic")],
           ["Title":"Lyrics","Controller":"Lyric","Image":#imageLiteral(resourceName: "Lyrics")],
           ["Title":"Dog","Controller":"dog","Image":#imageLiteral(resourceName: "Dog")],
-          ["Title":"Selfie","Controller":"Selfie","Image":#imageLiteral(resourceName: "Attitude")],
-          ["Title":"Food","Controller":"Food","Image":#imageLiteral(resourceName: "Food")],
+          ["Title":"Selfie","Controller":"Selfie","Image":#imageLiteral(resourceName: "minions-taking-a-selfie_2880x1800_xtrafondos.com")],
+          ["Title":"Food","Controller":"Food","Image":#imageLiteral(resourceName: "FooM")],
           ["Title":"Fitness","Controller":"Fitness","Image":#imageLiteral(resourceName: "Fitness")],
           ["Title":"Funny", "Controller":"Funny","Image":#imageLiteral(resourceName: "Funny")],
           ["Title":"Inspirational", "Controller":"Inspirational","Image":#imageLiteral(resourceName: "Insp")],
@@ -33,12 +34,12 @@ class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDele
           ["Title":"Birthday", "Controller":"Birthday","Image":#imageLiteral(resourceName: "Birthday")],
           ["Title":"Season", "Controller":"Season","Image":#imageLiteral(resourceName: "Season")],
           ["Title":"Travel", "Controller":"Travel","Image":#imageLiteral(resourceName: "Travel")],
-          ["Title":"Heartbreak", "Controller":"Heartbreak","Image":#imageLiteral(resourceName: "Attitude")],
-          ["Title":"Sad", "Controller":"Sad","Image":#imageLiteral(resourceName: "Attitude")],
+          ["Title":"Heartbreak", "Controller":"Heartbreak","Image":#imageLiteral(resourceName: "HeartBreak")],
+          ["Title":"Sad", "Controller":"Sad","Image":#imageLiteral(resourceName: "Sad")],
           ["Title":"Beach", "Controller":"Beach","Image":#imageLiteral(resourceName: "Beach")],
-          ["Title":"Couple", "Controller":"Couple","Image":#imageLiteral(resourceName: "Couple")],
-          ["Title":"Friends", "Controller":"Friends","Image":#imageLiteral(resourceName: "Attitude")],
-          ["Title":"#hashtag", "Controller":"Hashtag","Image":#imageLiteral(resourceName: "Attitude")]
+          ["Title":"Couple", "Controller":"Couple","Image":#imageLiteral(resourceName: "Romant")],
+          ["Title":"Friends", "Controller":"Friends","Image":#imageLiteral(resourceName: "Friends")],
+          ["Title":"#hashtag", "Controller":"Hashtag","Image":#imageLiteral(resourceName: "Hashtag")]
     
       ]
     
@@ -59,6 +60,11 @@ class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //          let controller = self.storyboard?.instantiateViewController(withIdentifier: Cetgory[indexPath.row]["Controller"]!)
 //              self.navigationController?.pushViewController(controller!, animated: true)
+        
+        if interstitial.isReady {
+                               interstitial.present(fromRootViewController: self)
+                             }
+        
  
         let navigation = self.storyboard?.instantiateViewController(withIdentifier: Cetgory[indexPath.item]["Controller"] as! String)
         self.navigationController?.pushViewController(navigation!, animated: true)
@@ -70,9 +76,27 @@ class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
+                     let request = GADRequest()
+                     interstitial.load(request)
+                     interstitial = createAndLoadInterstitial()
+                      interstitial.delegate = self
+        
+        
         // Do any additional setup after loading the view.
     }
-    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+            interstitial = createAndLoadInterstitial()
+          }
+     
+     func createAndLoadInterstitial() -> GADInterstitial {
+          var interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
+          interstitial.delegate = self
+          interstitial.load(GADRequest())
+          return interstitial
+        }
+     
 
     /*
     // MARK: - Navigation

@@ -88,7 +88,7 @@ class Savage: UITableViewController, GADInterstitialDelegate {
 
        
     ]
-
+let backgroundImage = UIImage(#imageLiteral(resourceName: "bg2"))
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -98,6 +98,17 @@ class Savage: UITableViewController, GADInterstitialDelegate {
            interstitial.load(request)
         interstitial = createAndLoadInterstitial()
          interstitial.delegate = self
+        
+        
+        let imageView = UIImageView(image: backgroundImage)
+                   self.tableView.backgroundView = imageView
+        
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+               let blurView = UIVisualEffectView(effect: blurEffect)
+               blurView.frame = imageView.bounds
+               imageView.addSubview(blurView)
+               super.viewDidLoad()
         
         
         
