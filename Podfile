@@ -9,7 +9,8 @@ target 'CapSeen' do
 
 pod 'Google-Mobile-Ads-SDK'
 pod 'FaveButton'
-
+pod 'Firebase/Analytics'
+pod 'Firebase/Database'
 
   target 'CapSeenTests' do
     inherit! :search_paths

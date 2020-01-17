@@ -9,8 +9,9 @@
 import UIKit
 import GoogleMobileAds
 
-class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,GADInterstitialDelegate {
+class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,GADInterstitialDelegate,GADBannerViewDelegate {
     
+       var bannerView: GADBannerView!
          var interstitial: GADInterstitial!
     
       var Cetgory = [
@@ -80,6 +81,16 @@ class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+
+                 addBannerViewToView(bannerView)
+         
+              bannerView.adUnitID = "ca-app-pub-8978960658795160/5406398798"
+              bannerView.rootViewController = self
+               bannerView.load(GADRequest())
+               bannerView.delegate = self
+        
 
         
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2397092070")
@@ -101,7 +112,26 @@ class homeView: UIViewController,UICollectionViewDataSource,UICollectionViewDele
           interstitial.load(GADRequest())
           return interstitial
         }
-     
+     func addBannerViewToView(_ bannerView: GADBannerView) {
+          bannerView.translatesAutoresizingMaskIntoConstraints = false
+          view.addSubview(bannerView)
+          view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+         }
 
     /*
     // MARK: - Navigation

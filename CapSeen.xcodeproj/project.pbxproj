@@ -25,6 +25,8 @@
 		F02D0A2A23B760A0005601FF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D0A2923B760A0005601FF /* TableViewController.swift */; };
 		F052C3F523C78AB90024A028 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052C3F423C78AB90024A028 /* HomeCell.swift */; };
 		F052C3F723C78B150024A028 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052C3F623C78B150024A028 /* homeView.swift */; };
+		F05ABBD623C9C4B60012378C /* Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05ABBD523C9C4B60012378C /* Save.swift */; };
+		F05ABBD823C9C6090012378C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F05ABBD723C9C6090012378C /* GoogleService-Info.plist */; };
 		F071EA1623ACA8BB009E4279 /* Short.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1523ACA8BB009E4279 /* Short.swift */; };
 		F071EA1823AD4DA6009E4279 /* attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1723AD4DA6009E4279 /* attitude.swift */; };
 		F071EA1A23AD4DEE009E4279 /* Sassy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071EA1923AD4DEE009E4279 /* Sassy.swift */; };
@@ -100,6 +102,8 @@
 		F02D0A2923B760A0005601FF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F052C3F423C78AB90024A028 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		F052C3F623C78B150024A028 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
+		F05ABBD523C9C4B60012378C /* Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Save.swift; sourceTree = "<group>"; };
+		F05ABBD723C9C6090012378C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F071EA1523ACA8BB009E4279 /* Short.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Short.swift; sourceTree = "<group>"; };
 		F071EA1723AD4DA6009E4279 /* attitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attitude.swift; sourceTree = "<group>"; };
 		F071EA1923AD4DEE009E4279 /* Sassy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sassy.swift; sourceTree = "<group>"; };
@@ -222,8 +226,10 @@
 				F013800723A9F29200CA5301 /* Info.plist */,
 				F0137FFF23A9F28F00CA5301 /* Cap_Tap.xcdatamodeld */,
 				F0851C9523C0F1520063C234 /* Fav.swift */,
+				F05ABBD723C9C6090012378C /* GoogleService-Info.plist */,
 				F052C3F423C78AB90024A028 /* HomeCell.swift */,
 				F052C3F623C78B150024A028 /* homeView.swift */,
+				F05ABBD523C9C4B60012378C /* Save.swift */,
 			);
 			path = "Cap-Tap";
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 			files = (
 				F013800623A9F29200CA5301 /* LaunchScreen.storyboard in Resources */,
 				F013800323A9F29200CA5301 /* Assets.xcassets in Resources */,
+				F05ABBD823C9C6090012378C /* GoogleService-Info.plist in Resources */,
 				F0137FFE23A9F28F00CA5301 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +538,7 @@
 				F0DE37F423B9098000E65753 /* Life.swift in Sources */,
 				F0DE37EE23B9095900E65753 /* Fitness.swift in Sources */,
 				F0DE37F823B9099900E65753 /* Birthday.swift in Sources */,
+				F05ABBD623C9C4B60012378C /* Save.swift in Sources */,
 				F0DE37F223B9097600E65753 /* Inspirational.swift in Sources */,
 				F0DE380623B909E900E65753 /* Friends.swift in Sources */,
 				F013800123A9F28F00CA5301 /* Cap_Tap.xcdatamodeld in Sources */,
@@ -728,7 +736,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 7227VAQ96L;
 				INFOPLIST_FILE = "Cap-Tap/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -736,7 +744,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tipsy.com.Cap-Tap";
 				PRODUCT_NAME = CapSeen;
 				SWIFT_VERSION = 5.0;
@@ -750,7 +758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 7227VAQ96L;
 				INFOPLIST_FILE = "Cap-Tap/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -758,7 +766,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tipsy.com.Cap-Tap";
 				PRODUCT_NAME = CapSeen;
 				SWIFT_VERSION = 5.0;
