@@ -9,6 +9,8 @@
 import UIKit
 import FaveButton
 import CoreData
+import Firebase
+
 
 func color(_ rgbColor: Int) -> UIColor{
        return UIColor(
@@ -31,6 +33,52 @@ class LitCell: UITableViewCell ,FaveButtonDelegate {
     @IBOutlet weak var Textlbl: UILabel!
     
     @IBOutlet weak var SaveBtn: UIButton!
+    
+    @IBAction func Copy(_ sender: Any) {
+           UIPasteboard.general.string = Textlbl.text
+       }
+       @IBAction func Instagrm(_ sender: Any) {
+           var instagramHooks = "instagram://user?username=nilrajsinh_19"
+              var instagramUrl = NSURL(string: instagramHooks)
+           if UIApplication.shared.canOpenURL(instagramUrl! as URL)
+              {
+               UIApplication.shared.openURL(instagramUrl! as URL)
+
+               } else {
+                  //redirect to safari because the user doesn't have Instagram
+               UIApplication.shared.openURL(NSURL(string: "http://instagram.com/")! as URL)
+              }
+       }
+       
+       @IBAction func Facebook(_ sender: Any) {
+        
+        let instagramHooks = "fb://profile/157299717658"
+                           var instagramUrl = NSURL(string: instagramHooks)
+                        if UIApplication.shared.canOpenURL(instagramUrl! as URL)
+                           {
+                            UIApplication.shared.openURL(instagramUrl! as URL)
+
+                            } else {
+                               //redirect to safari because the user doesn't have Instagram
+                            UIApplication.shared.openURL(NSURL(string: "https://facebook.com")! as URL)
+                           }
+               
+       }
+       
+       @IBAction func Whatsapp(_ sender: Any) {
+        
+        let instagramHooks = "https://api.whatsapp.com/send?phone=858870068"
+                    var instagramUrl = NSURL(string: instagramHooks)
+                 if UIApplication.shared.canOpenURL(instagramUrl! as URL)
+                    {
+                     UIApplication.shared.openURL(instagramUrl! as URL)
+
+                     } else {
+                        //redirect to safari because the user doesn't have Instagram
+                     UIApplication.shared.openURL(NSURL(string: "https://wa.me")! as URL)
+                    }
+        
+       }
     
     @IBAction func Like(_ sender: Any) {
            
@@ -107,11 +155,6 @@ class LitCell: UITableViewCell ,FaveButtonDelegate {
     }
     
     
-    @IBAction func Copy(_ sender: Any) {
-        
-        UIPasteboard.general.string = Textlbl.text
-               
-    }
-    
+   
 
 }

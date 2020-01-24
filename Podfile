@@ -11,6 +11,8 @@ pod 'Google-Mobile-Ads-SDK'
 pod 'FaveButton'
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
+pod 'Firebase/MLNLTranslate'
+
 
   target 'CapSeenTests' do
     inherit! :search_paths

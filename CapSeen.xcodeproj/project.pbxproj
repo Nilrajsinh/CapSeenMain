@@ -298,6 +298,7 @@
 				F0137FF023A9F28F00CA5301 /* Frameworks */,
 				F0137FF123A9F28F00CA5301 /* Resources */,
 				4D6B372BCADF52E2ED72AA19 /* [CP] Embed Pods Frameworks */,
+				0206A89C0B70AC9FB85DC0F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,6 +337,7 @@
 				F013801423A9F29200CA5301 /* Frameworks */,
 				F013801523A9F29200CA5301 /* Resources */,
 				522FB4CEAA75B676FE054284 /* [CP] Embed Pods Frameworks */,
+				37A0858D1D0CF7A7CD576125 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -419,6 +421,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0206A89C0B70AC9FB85DC0F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapSeen/Pods-CapSeen-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapSeen/Pods-CapSeen-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapSeen/Pods-CapSeen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		27A26A46C36B3EBD2D1C48FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -461,6 +480,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37A0858D1D0CF7A7CD576125 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapSeen-CapSeenUITests/Pods-CapSeen-CapSeenUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapSeen-CapSeenUITests/Pods-CapSeen-CapSeenUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapSeen-CapSeenUITests/Pods-CapSeen-CapSeenUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3A5BE6C2351DFD3034176180 /* [CP] Check Pods Manifest.lock */ = {
@@ -736,7 +772,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 7227VAQ96L;
 				INFOPLIST_FILE = "Cap-Tap/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -744,7 +780,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tipsy.com.Cap-Tap";
 				PRODUCT_NAME = CapSeen;
 				SWIFT_VERSION = 5.0;
@@ -758,7 +794,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 7227VAQ96L;
 				INFOPLIST_FILE = "Cap-Tap/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -766,7 +802,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tipsy.com.Cap-Tap";
 				PRODUCT_NAME = CapSeen;
 				SWIFT_VERSION = 5.0;

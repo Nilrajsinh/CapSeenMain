@@ -15,7 +15,7 @@ class Sassy: UITableViewController, GADInterstitialDelegate {
     
     
     var sassy = [
-        "SASSY",
+       
         "Don’t be average, be savage",
 
         "Life goes on, with or without you.",
